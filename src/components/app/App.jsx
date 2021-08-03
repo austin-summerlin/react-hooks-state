@@ -1,5 +1,6 @@
 import React from 'react';
+import SeinfeldQuote from '../../containers/SeinfeldQuote';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <SeinfeldQuote />;
 }

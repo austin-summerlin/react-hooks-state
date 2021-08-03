@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Quote = ({ quote, character }) => {
+  console.log(quote);
   return (
-    <div className="quote">
+    < div className="quote" >
       <figure>
-        <h1>{character}</h1>
-        <figcaption>{quote}</figcaption>
+        <h3>{character}</h3>
+        <p>{quote}</p>
       </figure>
-    </div>
+    </div >
   );
 };
 
 Quote.propTypes = {
-  quote: PropTypes.string.isRequired,
-  character: PropTypes.string.isRequired,
+  quote: PropTypes.string,
+  character: PropTypes.string,
 };
 
 export default Quote;

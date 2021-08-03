@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './style.css';
+import style from '../load/Load.css';
 
 function Load({ onClick }) {
 
   return (
-    <div className={style.loadcontainer}>
-      <h2 className={style.loadtitle}>Seinfeld</h2>
+    <div>
+      <h2 className={style.title}>Seinfeld</h2>
       <button className={style.loadButton} onClick={onClick}>Get Quote</button>
     </div>
   );
